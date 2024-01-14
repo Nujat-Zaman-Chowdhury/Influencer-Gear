@@ -5,6 +5,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  
+}
+html,body{
+    background: #FFF;
+}
+.btn-primary{
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* header styles */
@@ -12,6 +25,7 @@ header {
   max-width: 1440px;
   width: 100%;
   padding: 60px 120px;
+  
 }
 header .nav {
   display: flex;
@@ -42,4 +56,29 @@ header .nav-links ul {
   color: #3a3a3a;
   font-size: 2rem;
   font-weight: 700;
+}
+ 
+/* banner styles */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+    gap: 170px;
+}
+.banner-info {
+    width: 500px;
+    margin-left: 0px;
+}
+
+.banner-title{
+    color: #3A3A3A;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.banner-description{
+    margin: 16px 0px;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
 }
