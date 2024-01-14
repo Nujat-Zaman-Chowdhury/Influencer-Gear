@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  
   
 }
 html,body{
@@ -23,9 +25,9 @@ html,body{
 
 /* header styles */
 header {
-  max-width: 1440px;
+  
+  padding: 60px 120px 0px;
   width: 100%;
-  padding: 60px 120px;
   
 }
 header .nav {
@@ -86,7 +88,18 @@ header .nav-links ul {
 }
 
 
-
+/* section logo */
+.logo{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
 
 
 
@@ -102,8 +115,9 @@ header .nav-links ul {
 /* responsive media queries */
 /* for small devices */
 @media screen and (max-width: 576px) {
+
     header{
-        padding: 30px;
+        padding:20px 20px 0px;
     }
     .nav ul li,.ri-search-2-line{
         display: none;
@@ -127,6 +141,22 @@ header .nav-links ul {
         font-size: 0.9rem;
         font-weight: 500;
     }
+    .banner-img img{
+        width: 202px;
+        height: 190px;
+    }
+    .logo{
+        width: 100%;
+        padding: 10px;
+    }
+    .logo-img{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .logo-img img{
+        width: 20%;
+        height: 20%;
+    }
     
      
 }
@@ -135,7 +165,7 @@ header .nav-links ul {
 /* for medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header{
-        padding: 40px;
+        padding: 0px 30px ;
     }
     .nav ul li,.ri-search-2-line{
         display: none;
@@ -159,6 +189,13 @@ header .nav-links ul {
     .banner-description{
         font-size: 0.9rem;
         font-weight: 500;
+    }
+    .logo{
+        width: 100%;
+        padding: 0px 25px;
+    }
+    .logo-img{
+        flex-wrap: wrap;
     }
     
 }
