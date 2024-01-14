@@ -12,6 +12,9 @@
 html,body{
     background: #FFF;
 }
+main section{
+    margin-top: 60px;
+}
 .btn-primary{
     border-radius: 41px;
     background: #E02C6D;
@@ -87,7 +90,7 @@ header .nav-links ul {
     font-weight: 600;
 }
 
-
+/* main styles */
 /* section logo */
 .logo{
     width: 80%;
@@ -165,7 +168,7 @@ header .nav-links ul {
 /* for medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header{
-        padding: 0px 30px ;
+        padding: 30px 30px 0px;
     }
     .nav ul li,.ri-search-2-line{
         display: none;
