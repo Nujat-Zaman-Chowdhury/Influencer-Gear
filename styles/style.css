@@ -91,6 +91,11 @@ header .nav-links ul {
   font-size: 3rem;
   font-weight: 700;
 }
+.banner-img img{
+  background-image: url(../images/Circle\ design.svg);
+  background-size: 100% 100%;
+  
+}
 
 /* main styles */
 /* section logo */
@@ -278,7 +283,7 @@ header .nav-links ul {
     width: 100%;
     margin: 50px auto;
   }
-  .popular-title{
+  .popular-title {
     font-size: 1.2rem;
   }
   .popular-column {
@@ -318,7 +323,7 @@ header .nav-links ul {
     width: 100%;
   }
   .banner-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .banner-description {
     font-size: 0.9rem;
@@ -354,10 +359,10 @@ header .nav-links ul {
     width: 100%;
     margin: 50px auto;
   }
-  .popular-title{
+  .popular-title {
     font-size: 1.2rem;
   }
- 
+
   .card {
     width: 90%;
   }
