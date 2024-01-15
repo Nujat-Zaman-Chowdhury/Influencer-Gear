@@ -14,6 +14,12 @@ body {
 main section {
   margin-top: 60px;
 }
+.description {
+  margin: 16px 0px;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
 .btn-primary {
   border-radius: 41px;
   background: #e02c6d;
@@ -23,6 +29,11 @@ main section {
   font-size: 1rem;
   font-weight: 700;
   gap: 8px;
+}
+.logo,.features {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0px;
 }
 
 /* header styles */
@@ -78,25 +89,35 @@ header .nav-links ul {
   font-size: 3rem;
   font-weight: 700;
 }
-.banner-description {
-  margin: 16px 0px;
-  color: #3a3a3a;
-  font-size: 1rem;
-  font-weight: 600;
-}
+
 
 /* main styles */
 /* section logo */
-.logo {
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px 0px;
-}
+
 .logo-img {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+
+
+/* features section */
+
+.features .btn-primary{
+  border-radius: 0;
+}
+.features-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.features-products{
+  width: 50%;
+}
+.features-title{
+  font-size: 2rem;
 }
 
 /* footer styles */
@@ -121,6 +142,9 @@ header .nav-links ul {
 .footer-icons i {
   font-size: 2rem;
 }
+.footer-content p{
+  color: #D9DBE1;
+}
 
 /* responsive media queries */
 /* for small devices */
@@ -135,10 +159,11 @@ header .nav-links ul {
   .nav-title h1 {
     font-size: 1rem;
   }
-  .banner {
+  .banner,.features-container {
     flex-direction: column-reverse;
     width: 100%;
     gap: 30px;
+    padding: 30px;
     text-align: center;
   }
   .banner-img img,
@@ -156,7 +181,7 @@ header .nav-links ul {
     width: 202px;
     height: 190px;
   }
-  .logo {
+  .logo,.features {
     width: 100%;
     padding: 10px;
   }
@@ -168,6 +193,38 @@ header .nav-links ul {
     width: 20%;
     height: 20%;
   }
+  .footer-content{
+    padding: 40px 50px;
+  }
+  .footer-title{
+    font-size: 1rem;
+  }
+  .footer-content p{
+    font-size: 0.8rem;
+  }
+  .footer-icons i{
+    font-size: 1.3rem;
+  }
+  
+  {
+    flex-direction: column-reverse;
+    width: 100%;
+    
+    gap: 30px;
+ 
+  }
+
+  .features-products{
+    width: 100%;
+    text-align: center;
+  }
+  .features .features-img img{
+    width: 100%;
+  }
+  .features-title{
+    font-size: 1.5rem;
+  }
+  
 }
 
 /* for medium devices */
@@ -183,7 +240,7 @@ header .nav-links ul {
   .nav-title h1 {
     font-size: 1.2rem;
   }
-  .banner {
+  .banner,.features-container {
     flex-direction: column-reverse;
     width: 100%;
     gap: 40px;
@@ -200,11 +257,22 @@ header .nav-links ul {
     font-size: 0.9rem;
     font-weight: 500;
   }
-  .logo {
+  .logo,.features {
     width: 100%;
-    padding: 0px 25px;
+    padding: 25px;
   }
   .logo-img {
     flex-wrap: wrap;
+  }
+
+  .features-products{
+    width: 100%;
+    text-align: center;
+  }
+  .features .features-img img{
+    width: 100%;
+  }
+  .features-title{
+    font-size: 1.8rem;
   }
 }
