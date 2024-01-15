@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 /* shared styles */
 * {
   margin: 0;
@@ -30,7 +31,8 @@ main section {
   font-weight: 700;
   gap: 8px;
 }
-.logo,.features {
+.logo,
+.features {
   width: 80%;
   margin: 0 auto;
   padding: 40px 0px;
@@ -90,7 +92,6 @@ header .nav-links ul {
   font-weight: 700;
 }
 
-
 /* main styles */
 /* section logo */
 
@@ -101,22 +102,77 @@ header .nav-links ul {
   gap: 60px;
 }
 
+/* popular section */
+.popular {
+  width: 100%;
+}
+.popular-container {
+  width: 70%;
+  margin: 50px auto;
+}
+.popular-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #3a3a3a;
+  font-size: 1.5rem;
+}
+.popular-column {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  border-radius: 8px;
+  background: #fff;
+  width: 292px;
+  padding: 23px;
+  height: 476px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+.card img {
+  width: 250px;
+  height: 256px;
+}
+.card h1 {
+  font-size: 1.4rem;
+  font-weight: 500px;
+  color: #18191f;
+  line-height: 40px;
+}
+.card h2 {
+  font-size: 1.3rem;
+  color: #000000de;
+  font-family: "Inter", sans-serif;
+}
+.card p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #787885;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+.card i {
+  color: #fb8200;
+}
 
 /* features section */
 
-.features .btn-primary{
+.features .btn-primary {
   border-radius: 0;
 }
-.features-container{
+.features-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 80px;
 }
-.features-products{
+.features-products {
   width: 50%;
 }
-.features-title{
+.features-title {
   font-size: 2rem;
 }
 
@@ -142,8 +198,8 @@ header .nav-links ul {
 .footer-icons i {
   font-size: 2rem;
 }
-.footer-content p{
-  color: #D9DBE1;
+.footer-content p {
+  color: #d9dbe1;
 }
 
 /* responsive media queries */
@@ -159,7 +215,8 @@ header .nav-links ul {
   .nav-title h1 {
     font-size: 1rem;
   }
-  .banner,.features-container {
+  .banner,
+  .features-container {
     flex-direction: column-reverse;
     width: 100%;
     gap: 30px;
@@ -181,7 +238,8 @@ header .nav-links ul {
     width: 202px;
     height: 190px;
   }
-  .logo,.features {
+  .logo,
+  .features {
     width: 100%;
     padding: 10px;
   }
@@ -193,38 +251,46 @@ header .nav-links ul {
     width: 20%;
     height: 20%;
   }
-  .footer-content{
+  .footer-content {
     padding: 40px 50px;
   }
-  .footer-title{
+  .footer-title {
     font-size: 1rem;
   }
-  .footer-content p{
+  .footer-content p {
     font-size: 0.8rem;
   }
-  .footer-icons i{
+  .footer-icons i {
     font-size: 1.3rem;
   }
-  
-  {
-    flex-direction: column-reverse;
-    width: 100%;
-    
-    gap: 30px;
- 
-  }
 
-  .features-products{
+  .features-products {
     width: 100%;
     text-align: center;
   }
-  .features .features-img img{
+  .features .features-img img {
     width: 100%;
   }
-  .features-title{
+  .features-title {
     font-size: 1.5rem;
   }
-  
+  .popular-container {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .popular-title{
+    font-size: 1.2rem;
+  }
+  .popular-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 329px;
+    height: 476px;
+  }
+  .card img {
+    width: 100%;
+  }
 }
 
 /* for medium devices */
@@ -240,7 +306,8 @@ header .nav-links ul {
   .nav-title h1 {
     font-size: 1.2rem;
   }
-  .banner,.features-container {
+  .banner,
+  .features-container {
     flex-direction: column-reverse;
     width: 100%;
     gap: 40px;
@@ -257,7 +324,8 @@ header .nav-links ul {
     font-size: 0.9rem;
     font-weight: 500;
   }
-  .logo,.features {
+  .logo,
+  .features {
     width: 100%;
     padding: 25px;
   }
@@ -265,14 +333,35 @@ header .nav-links ul {
     flex-wrap: wrap;
   }
 
-  .features-products{
+  .features-products {
     width: 100%;
     text-align: center;
   }
-  .features .features-img img{
+  .features .features-img img {
     width: 100%;
   }
-  .features-title{
+  .features-title {
     font-size: 1.8rem;
+  }
+  .popular-container {
+    width: 100%;
+  }
+  .popular-column {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .popular-container {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .popular-title{
+    font-size: 1.2rem;
+  }
+ 
+  .card {
+    width: 90%;
+  }
+  .card img {
+    width: 100%;
   }
 }
