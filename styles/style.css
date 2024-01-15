@@ -91,10 +91,10 @@ header .nav-links ul {
   font-size: 3rem;
   font-weight: 700;
 }
-.banner-img img{
+.banner-img img {
   background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
   background-size: 100% 100%;
-  
 }
 
 /* main styles */
@@ -127,6 +127,20 @@ header .nav-links ul {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.see-more{
+  width: 90%;
+  text-align: right;
+  margin: 0 auto;
+}
+.see-more button{
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 16px;
+  font-weight: 700;
+  background:transparent;
+  border: none;
+  cursor: pointer;
+
 }
 .card {
   border-radius: 8px;
